@@ -1,0 +1,20 @@
+/RMG/Geometry/IncludeGDMLFile simple_teststand.gdml
+
+# Append sensitive volume registration here
+
+# End append
+
+/run/initialize
+
+/RMG/Generator/Confine Volume
+
+/RMG/Generator/Confinement/Physical/AddVolume src_physical
+
+/RMG/Output/FileName output.lh5
+
+/RMG/Generator/Select GPS
+/gps/particle ion
+/gps/ion 27 60
+/gps/energy 0 eV
+
+/run/beamOn 10000
