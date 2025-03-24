@@ -1,6 +1,6 @@
 # Remage Simulation Tutorial
 
-This tutorial guides you through the process of setting up a simple teststand geometry and running a simulation using remage. Follow the steps below to generate geometry, run the simulation, and visualize the results.
+This tutorial guides you through the process of setting up a simple test stand geometry and running a simulation using remage. Follow the steps below to generate geometry, run the simulation, and visualize the results.
 
 ## Prerequisites
 
@@ -24,9 +24,9 @@ Run the `generate_geometryl.py` script to generate the `simple_teststand.gdml` a
 python generate_geometryl.py
 ```
    
-### Step 3: Modify the GDML File
+### Step 3: Modify the `run.mac` File
 
-Copy the sensitive volume registration lines from `pv_reg.mac` into `simple_teststand.gdml` before the `/run/initialize` line. This step is crucial for ensuring the simulation recognizes the necessary volumes.
+Copy the sensitive volume registration lines from `pv_reg.mac` into `run.mac` in the indicated area before the `/run/initialize` line. This step is crucial for ensuring the simulation recognizes the necessary volumes.
 
 ### Step 4: Create and Enter the Latest Remage Container
 
@@ -42,7 +42,7 @@ apptainer shell remage_latest.sif
 
 ### Step 5: Run Remage
 
-Execute the Remage simulation using the run.mac script:
+Execute the Remage simulation using the `run.mac` script:
 ```sh
 remage run.mac
 ```
