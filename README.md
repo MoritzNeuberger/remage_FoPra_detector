@@ -53,9 +53,3 @@ Run the `analyze_simulation.py` script to visualize the simulation results:
 ```sh
 python analyze_simulation.py
 ```
-   
-## Additional Notes
-
-Ensure all file paths and names are correct as per your setup.
-If you encounter any issues, refer to the Remage documentation or seek help from the community.
-
